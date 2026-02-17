@@ -9,7 +9,7 @@ from tqdm import tqdm
 TARGET_PATH = 'E:' 
 
 # Directory containing your .yar files
-RULES_DIR = 'scanner_rules' 
+RULES_DIR = '../scanner_rules' 
 
 OUTPUT_CSV = 'gemini_scan_results.csv'
 MAX_FILE_SIZE = 100 * 1024 * 1024 # 100MB Limit
