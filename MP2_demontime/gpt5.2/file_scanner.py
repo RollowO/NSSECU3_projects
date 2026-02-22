@@ -1,7 +1,8 @@
 """High-speed file scanner using strict, swap-aware signature matching.
 
 - Builds a Pattern Map from `file_headers.csv` (columns: File name, 50 bytes).
-- Scans a directory for files with NO extension and size < 15MB.
+- Scans a directory (or all mounted drives) for files with NO extension and size < 15MB.
+  (Can optionally include files WITH extensions via --include-extensions flag)
 - Reads only the first 50 bytes of each candidate file.
 - Classifies files by matching against the known signatures from the CSV.
 - Matching is resilient to adjacent byte swaps (pair-swap).
@@ -11,6 +12,15 @@ Designed for forensics triage / bulk signature classification.
 
 Usage (defaults match this workspace):
   python file_scanner.py --scan-root .\\File --pattern-csv file_headers.csv --output detected_files.csv
+
+To scan all available drives (Windows/Linux/macOS) with mounted volumes:
+  python file_scanner.py --scan-all-drives --pattern-csv file_headers.csv --output detected_files.csv
+
+To scan ALL files including those with extensions:
+  python file_scanner.py --scan-all-drives --pattern-csv file_headers.csv --output detected_files.csv --include-extensions
+
+To see diagnostic info about filtering (extension, size, permissions):
+  python file_scanner.py --scan-all-drives --pattern-csv file_headers.csv --output detected_files.csv --verbose
 
 If `tqdm` is installed, a progress bar is shown. If not installed, a simple textual
 progress indicator is used.
@@ -26,6 +36,57 @@ import sys
 from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 from dataclasses import dataclass
 from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
+
+import subprocess
+
+
+def get_all_drives() -> List[str]:
+    """Enumerate all available drives on Windows (fixed + mounted).
+    
+    Returns a list of drive paths (e.g., ['C:\\', 'D:\\', '/mnt/external', ...])
+    On Windows, checks for drive letters A-Z and uses wmic to find all logical disks.
+    """
+    
+    drives = []
+    
+    # On Windows, enumerate drive letters A-Z
+    if sys.platform == "win32":
+        try:
+            # Use wmic to get all logical disks
+            result = subprocess.run(
+                ["wmic", "logicaldisk", "get", "name"],
+                capture_output=True,
+                text=True,
+                timeout=10
+            )
+            if result.returncode == 0:
+                for line in result.stdout.split('\n'):
+                    line = line.strip()
+                    if line and line != 'Name' and ':' in line:
+                        drives.append(f"{line}\\")
+        except Exception:
+            # Fallback: check drive letters A-Z
+            for letter in 'CDEFGHIJKLMNOPQRSTUVWXYZ':
+                path = f"{letter}:\\"
+                if os.path.exists(path):
+                    drives.append(path)
+    else:
+        # On Linux/macOS, check common mount points
+        common_mounts = [
+            "/mnt",
+            "/media",
+            "/Volumes",
+            "/run/media"
+        ]
+        for mount_point in common_mounts:
+            if os.path.exists(mount_point):
+                drives.append(mount_point)
+        
+        # Also add root if nothing found
+        if not drives and os.path.exists("/"):
+            drives.append("/")
+    
+    return drives
 
 
 def _pair_swap(data: bytes) -> bytes:
@@ -459,30 +520,50 @@ class SignatureEngine:
         return SignatureMatch(_magic_type(sample_50), best, matched=True)
 
 
-def iter_candidate_files(scan_root: str, max_size_bytes: int) -> Iterable[str]:
-    """Yield candidate files: no extension, file size < max_size_bytes."""
+def iter_candidate_files(
+    scan_root: str,
+    max_size_bytes: int,
+    verbose: bool = False,
+    include_extensions: bool = False,
+) -> Tuple[Iterable[str], Optional[Dict[str, int]]]:
+    """Yield candidate files with optional extension filter, file size < max_size_bytes.
+    
+    If verbose=True, also returns a dict with filtering statistics.
+    Otherwise returns (iterable, None).
+    """
 
-    # os.walk is reasonably fast; use topdown traversal.
-    for dirpath, dirnames, filenames in os.walk(scan_root):
-        # Avoid hidden/system dirnames in a cheap way.
-        dirnames[:] = [d for d in dirnames if not d.startswith(".")]
+    stats = {"total_files": 0, "filtered_extension": 0, "filtered_size": 0, "filtered_other": 0}
 
-        for name in filenames:
-            # Filter: no extension
-            _, ext = os.path.splitext(name)
-            if ext:
-                continue
+    def _iter():
+        # os.walk is reasonably fast; use topdown traversal.
+        for dirpath, dirnames, filenames in os.walk(scan_root):
+            # Avoid hidden/system dirnames in a cheap way.
+            dirnames[:] = [d for d in dirnames if not d.startswith(".")]
 
-            path = os.path.join(dirpath, name)
-            try:
-                st = os.stat(path)
-            except OSError:
-                continue
+            for name in filenames:
+                stats["total_files"] += 1
+                
+                # Filter: optionally skip files with extension
+                if not include_extensions:
+                    _, ext = os.path.splitext(name)
+                    if ext:
+                        stats["filtered_extension"] += 1
+                        continue
 
-            if st.st_size <= 0 or st.st_size >= max_size_bytes:
-                continue
+                path = os.path.join(dirpath, name)
+                try:
+                    st = os.stat(path)
+                except OSError:
+                    stats["filtered_other"] += 1
+                    continue
 
-            yield path
+                if st.st_size <= 0 or st.st_size >= max_size_bytes:
+                    stats["filtered_size"] += 1
+                    continue
+
+                yield path
+    
+    return _iter(), stats if verbose else None
 
 
 def _read_first_50(path: str) -> Tuple[str, Optional[bytes], Optional[str]]:
@@ -544,8 +625,17 @@ def scan_and_classify(
     max_workers: int,
     max_pending: int,
     include_nonmatches: bool,
-) -> Tuple[int, int, int]:
-    """Scan scan_root and write output CSV. Returns (total, classified, unknown)."""
+    append_mode: bool = False,
+    verbose: bool = False,
+    include_extensions: bool = False,
+) -> Tuple[int, int, int, Optional[Dict[str, int]]]:
+    """Scan scan_root and write output CSV. Returns (total, matched, unknown, stats_dict|None).
+    
+    If append_mode is True, appends to existing CSV (for multiple drive scans).
+    Otherwise, overwrites the CSV file.
+    If verbose=True, also returns filtering statistics.
+    If include_extensions=True, scans files WITH extensions too (not just extension-less files).
+    """
 
     total = 0
     matched = 0
@@ -554,9 +644,13 @@ def scan_and_classify(
     # When scanning a whole drive, pre-counting is expensive; use an open-ended bar.
     progress = _tqdm(None)
 
-    with open(output_csv_path, "w", newline="", encoding="utf-8") as out:
+    file_mode = "a" if append_mode else "w"
+    write_header = not append_mode or not os.path.exists(output_csv_path) or os.path.getsize(output_csv_path) == 0
+
+    with open(output_csv_path, file_mode, newline="", encoding="utf-8") as out:
         writer = csv.writer(out)
-        writer.writerow(["File Name", "File Path", "Detected Type"])
+        if write_header:
+            writer.writerow(["File Name", "File Path", "Detected Type"])
 
         with ThreadPoolExecutor(max_workers=max_workers) as pool:
             pending = set()
@@ -596,7 +690,8 @@ def scan_and_classify(
                     matched += 1
                     writer.writerow([file_name, path, m.label])
 
-            for path in iter_candidate_files(scan_root, max_size_bytes=max_size_bytes):
+            candidate_iter, stats = iter_candidate_files(scan_root, max_size_bytes=max_size_bytes, verbose=verbose, include_extensions=include_extensions)
+            for path in candidate_iter:
                 pending.add(pool.submit(_read_first_50, path))
                 if len(pending) >= max_pending:
                     done, pending = wait(pending, return_when=FIRST_COMPLETED)
@@ -608,13 +703,14 @@ def scan_and_classify(
                 _drain(done)
 
     progress.close()
-    return total, matched, nonmatched
+    return total, matched, nonmatched, stats
 
 
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="High-speed signature-based file scanner")
     parser.add_argument("--pattern-csv", default="file_headers.csv", help="Input pattern CSV")
     parser.add_argument("--scan-root", default=os.path.join(".", "File"), help="Directory to scan")
+    parser.add_argument("--scan-all-drives", action="store_true", help="Scan all available drives (overrides --scan-root)")
     parser.add_argument("--output", default="detected_files.csv", help="Output CSV path")
     parser.add_argument("--max-mb", type=int, default=15, help="Max file size to scan (MB)")
     parser.add_argument("--workers", type=int, default=0, help="Thread workers (0=auto)")
@@ -627,6 +723,16 @@ def main(argv: Optional[List[str]] = None) -> int:
         "--include-nonmatches",
         action="store_true",
         help="Also write non-matching candidates as Unknown rows (debug/noisy; off by default)",
+    )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Show detailed filtering statistics (why files were skipped)",
+    )
+    parser.add_argument(
+        "--include-extensions",
+        action="store_true",
+        help="Also scan files WITH extensions (default: only scans extension-less files)",
     )
 
     args = parser.parse_args(argv)
@@ -654,22 +760,68 @@ def main(argv: Optional[List[str]] = None) -> int:
         print(f"Failed to initialize SignatureEngine: {exc}", file=sys.stderr)
         return 2
 
-    total, matched, nonmatched = scan_and_classify(
-        scan_root=args.scan_root,
-        engine=engine,
-        output_csv_path=args.output,
-        max_size_bytes=max_size_bytes,
-        max_workers=max_workers,
-        max_pending=max(100, int(args.max_pending)),
-        include_nonmatches=bool(args.include_nonmatches),
-    )
+    # Determine scan roots
+    if args.scan_all_drives:
+        scan_roots = get_all_drives()
+        print(f"Scanning all available drives: {scan_roots}", file=sys.stderr)
+    else:
+        scan_roots = [args.scan_root]
 
-    print("\nScan Summary")
-    print(f"  Scan root      : {os.path.abspath(args.scan_root)}")
-    print(f"  Patterns from  : {os.path.abspath(args.pattern_csv)}")
+    total_all = 0
+    matched_all = 0
+    nonmatched_all = 0
+
+    # Scan each root
+    for idx, scan_root in enumerate(scan_roots):
+        if not os.path.exists(scan_root):
+            print(f"Skipping {scan_root} (does not exist)", file=sys.stderr)
+            continue
+
+        print(f"\nScanning: {os.path.abspath(scan_root)}", file=sys.stderr)
+        
+        try:
+            # Use append mode if this is not the first scan
+            append_mode = idx > 0
+            total, matched, nonmatched, stats = scan_and_classify(
+                scan_root=scan_root,
+                engine=engine,
+                output_csv_path=args.output,
+                max_size_bytes=max_size_bytes,
+                max_workers=max_workers,
+                max_pending=max(100, int(args.max_pending)),
+                include_nonmatches=bool(args.include_nonmatches),
+                append_mode=append_mode,
+                verbose=args.verbose,
+                include_extensions=args.include_extensions,
+            )
+            total_all += total
+            matched_all += matched
+            nonmatched_all += nonmatched
+            
+            if args.verbose and stats:
+                print(f"\n  Scan root: {scan_root}", file=sys.stderr)
+                print(f"    Total files examined     : {stats.get('total_files', 0):,}", file=sys.stderr)
+                print(f"    Filtered (has extension) : {stats.get('filtered_extension', 0):,}", file=sys.stderr)
+                print(f"    Filtered (size/access)   : {stats.get('filtered_size', 0):,}", file=sys.stderr)
+                print(f"    Filtered (other reasons) : {stats.get('filtered_other', 0):,}", file=sys.stderr)
+                print(f"    Scanned (no extension)   : {total:,}", file=sys.stderr)
+        except Exception as exc:
+            print(f"Error scanning {scan_root}: {exc}", file=sys.stderr)
+            continue
+
+    print("\n" + "="*60)
+    print("FINAL SCAN SUMMARY")
+    print("="*60)
+    print(f"  Pattern CSV    : {os.path.abspath(args.pattern_csv)}")
     print(f"  Output CSV     : {os.path.abspath(args.output)}")
-    print(f"  Total scanned  : {total}")
-    print(f"  Files matched  : {matched}")
+    if args.scan_all_drives:
+        print(f"  Scanned drives : {', '.join(scan_roots)}")
+    else:
+        print(f"  Scan root      : {os.path.abspath(args.scan_root)}")
+    print(f"  Total scanned  : {total_all}")
+    print(f"  Files matched  : {matched_all}")
+    print(f"  Unknown files  : {nonmatched_all}")
+    print("="*60)
 
     return 0
 
