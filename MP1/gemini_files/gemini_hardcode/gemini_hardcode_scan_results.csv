@@ -1,221 +1,215 @@
-File_Path,File_Size,Rule,Description
-E:Users\victim1903\Documents\File\File001,10768,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File002,556,Suspect_Group_File002,Matches File002
-E:Users\victim1903\Documents\File\File003,1855,Suspect_Group_File003,Matches File003
-E:Users\victim1903\Documents\File\File004,149,Suspect_Group_File004,Matches File004
-E:Users\victim1903\Documents\File\File005,2560,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File006,4319474,Suspect_Group_File006,Matches File006 (ZIP archive)
-E:Users\victim1903\Documents\File\File007,1013332,Suspect_Group_File007,Matches File007 (ZIP archive)
-E:Users\victim1903\Documents\File\File008,1617304,Suspect_Group_File008,Matches File008 (PNG image)
-E:Users\victim1903\Documents\File\File009,1726586,Suspect_Group_File009,Matches File009 (PNG image)
-E:Users\victim1903\Documents\File\File010,4155280,Suspect_Group_File010,Matches File010 (ZIP archive)
-E:Users\victim1903\Documents\File\File011,12996644,Suspect_Group_File011,Matches File011 (ZIP archive)
-E:Users\victim1903\Documents\File\File012,28659,Suspect_Group_File012,Matches File012 (ZIP archive)
-E:Users\victim1903\Documents\File\File013,814,Suspect_Group_File013,Matches File013
-E:Users\victim1903\Documents\File\File014,3050393,Suspect_Group_File014,Matches File014 (ZIP archive)
-E:Users\victim1903\Documents\File\File015,164,Suspect_Group_File015,Matches File015
-E:Users\victim1903\Documents\File\File016,87,Suspect_Group_File016,Matches File016
-E:Users\victim1903\Documents\File\File017,4810789,Suspect_Group_File017,Matches File017 (ZIP archive)
-E:Users\victim1903\Documents\File\File018,407134,Suspect_Group_File018,Matches File018 (PDF)
-E:Users\victim1903\Documents\File\File019,1651234,Suspect_Group_File019,Matches File019 (PNG)
-E:Users\victim1903\Documents\File\File020,38102,Suspect_Group_File020,Matches File020
-E:Users\victim1903\Documents\File\File021,35182,Suspect_Group_File021,Matches File021
-E:Users\victim1903\Documents\File\File022,185443,Suspect_Group_File022,Matches File022 (PDF)
-E:Users\victim1903\Documents\File\File023,686849,Suspect_Group_File023,Matches File023 (ID3)
-E:Users\victim1903\Documents\File\File024,3072,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File025,23832,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File026,35821,Suspect_Group_File026,Matches File026
-E:Users\victim1903\Documents\File\File027,3584,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File028,109,Suspect_Group_File028,Matches File028
-E:Users\victim1903\Documents\File\File029,273,Suspect_Group_File029,Matches File029
-E:Users\victim1903\Documents\File\File030,5379567,Suspect_Group_File030,Matches File030 (ZIP archive)
-E:Users\victim1903\Documents\File\File031,59159,Suspect_Group_File031,Matches File031 (ZIP archive)
-E:Users\victim1903\Documents\File\File032,176259,Suspect_Group_File032,Matches File032 (ZIP archive)
-E:Users\victim1903\Documents\File\File033,31332,Suspect_Group_File033,Matches File033 (ZIP archive)
-E:Users\victim1903\Documents\File\File034,77,Suspect_Group_File034,Matches File034
-E:Users\victim1903\Documents\File\File035,3097388,Suspect_Group_File035,Matches File035 (ZIP archive)
-E:Users\victim1903\Documents\File\File036,1417519,Suspect_Group_File036,Matches File036 (PNG)
-E:Users\victim1903\Documents\File\File037,266343,Suspect_Group_File037,Matches File037 (ZIP archive)
-E:Users\victim1903\Documents\File\File038,5125758,Suspect_Group_File038,Matches File038 (CD)
-E:Users\victim1903\Documents\File\File039,608,Suspect_Group_File039,Matches File039
-E:Users\victim1903\Documents\File\File040,168,Suspect_Group_File040,Matches File040
-E:Users\victim1903\Documents\File\File041,1640375,Suspect_Group_File041,Matches File041 (PNG)
-E:Users\victim1903\Documents\File\File042,11280,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File043,106799,Suspect_Group_File043_2,Matches File043 (ZIP archive - Word document)
-E:Users\victim1903\Documents\File\File044,229,Suspect_Group_File044,Matches File044
-E:Users\victim1903\Documents\File\File045,137878,Suspect_Group_File045,Matches File045 (JPEG)
-E:Users\victim1903\Documents\File\File046,80947,Suspect_Group_File046,Matches File046 (MZ)
-E:Users\victim1903\Documents\File\File047,1082258,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File048,831,Suspect_Group_File048,Matches File048
-E:Users\victim1903\Documents\File\File049,1804,Suspect_Group_File049,Matches File049
-E:Users\victim1903\Documents\File\File050,86,Suspect_Group_File050,Matches File050
-E:Users\victim1903\Documents\File\File051,716249,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File052,146273,Suspect_Group_File052,Matches File052 (JPEG)
-E:Users\victim1903\Documents\File\File053,173909,Suspect_Group_File053,Matches File053 (JPEG)
-E:Users\victim1903\Documents\File\File054,628,Suspect_Group_File054,Matches File054
-E:Users\victim1903\Documents\File\File055,844097,Suspect_Group_File055,Matches File055 (ZIP archive - PowerPoint)
-E:Users\victim1903\Documents\File\File056,340390,Suspect_Group_File056,Matches File056 (ZIP archive)
-E:Users\victim1903\Documents\File\File057,691,Suspect_Group_File057,Matches File057
-E:Users\victim1903\Documents\File\File058,23112,Suspect_Group_File058,Matches File058
-E:Users\victim1903\Documents\File\File059,1720207,Suspect_Group_File059,Matches File059 (PNG)
-E:Users\victim1903\Documents\File\File060,3072,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File061,106,Suspect_Group_File061,Matches File061
-E:Users\victim1903\Documents\File\File062,11272,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File063,1962050,Suspect_Group_File063,Matches File063 (ID3)
-E:Users\victim1903\Documents\File\File064,2138,Suspect_Group_File064,Matches File064
-E:Users\victim1903\Documents\File\File065,756,Suspect_Group_File065,Matches File065
-E:Users\victim1903\Documents\File\File066,3259060,Suspect_Group_File066,Matches File066 (PDF)
-E:Users\victim1903\Documents\File\File067,366608,Suspect_Group_File067,Matches File067 (MZ variant)
-E:Users\victim1903\Documents\File\File068,1485481,Suspect_Group_File068,Matches File068 (PNG)
-E:Users\victim1903\Documents\File\File069,170993,Suspect_Group_File069,Matches File069 (PNG/JPEG hybrid)
-E:Users\victim1903\Documents\File\File070,1645439,Suspect_Group_File070,Matches File070 (PNG)
-E:Users\victim1903\Documents\File\File071,11792,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File072,1655833,Suspect_Group_File072,Matches File072 (PNG)
-E:Users\victim1903\Documents\File\File073,157801,Suspect_Group_File073,Matches File073 (JPEG)
-E:Users\victim1903\Documents\File\File074,7213107,Suspect_Group_File074,Matches File074 (ZIP archive)
-E:Users\victim1903\Documents\File\File075,341331,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File076,115731,Suspect_Group_File076_2,Matches File076 (ZIP archive - Word header)
-E:Users\victim1903\Documents\File\File077,603,Suspect_Group_File077,Matches File077
-E:Users\victim1903\Documents\File\File078,160610,Suspect_Group_File078,Matches File078 (JPEG)
-E:Users\victim1903\Documents\File\File079,339655,Suspect_Group_File079,Matches File079 (MZ variant)
-E:Users\victim1903\Documents\File\File080,11792,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File081,3072,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File082,147,Suspect_Group_File082,Matches File082
-E:Users\victim1903\Documents\File\File083,124,Suspect_Group_File083,Matches File083
-E:Users\victim1903\Documents\File\File084,417316,Suspect_Group_File084,Matches File084 (PDF)
-E:Users\victim1903\Documents\File\File085,406205,Suspect_Group_File085,Matches File085 (ZIP archive - .rels)
-E:Users\victim1903\Documents\File\File086,677,Suspect_Group_File086,Matches File086
-E:Users\victim1903\Documents\File\File087,288249,Suspect_Group_File087,Matches File087 (ZIP archive)
-E:Users\victim1903\Documents\File\File088,100,Suspect_Group_File088,Matches File088
-E:Users\victim1903\Documents\File\File089,180248,Suspect_Group_File089,Matches File089 (JPEG)
-E:Users\victim1903\Documents\File\File090,169745,Suspect_Group_File090,Matches File090 (JPEG)
-E:Users\victim1903\Documents\File\File091,494,Suspect_Group_File091,Matches File091
-E:Users\victim1903\Documents\File\File092,412847,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File093,3038333,Suspect_Group_File093,Matches File093 (ZIP archive)
-E:Users\victim1903\Documents\File\File094,62950,Suspect_Group_File094,Matches File094 (ZIP archive)
-E:Users\victim1903\Documents\File\File095,259805,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File096,187180,Suspect_Group_File096,Matches File096 (ZIP archive)
-E:Users\victim1903\Documents\File\File097,132678,Suspect_Group_File097,Matches File097 (JPEG)
-E:Users\victim1903\Documents\File\File098,1684054,Suspect_Group_File098,Matches File098 (PNG)
-E:Users\victim1903\Documents\File\File099,352,Suspect_Group_File099,Matches File099
-E:Users\victim1903\Documents\File\File100,27963,Suspect_Group_File100,Matches File100 (ZIP archive)
-E:Users\victim1903\Documents\File\File101,12816,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File102,196042,Suspect_Group_File102,Matches File102 (RIFF WAVE)
-E:Users\victim1903\Documents\File\File103,7474390,Suspect_Group_File103,Matches File103 (PDF)
-E:Users\victim1903\Documents\File\File104,1286316,Suspect_Group_File104,Matches File104 (ZIP archive)
-E:Users\victim1903\Documents\File\File105,1426547,Suspect_Group_File105,Matches File105 (PNG)
-E:Users\victim1903\Documents\File\File106,28944,Suspect_Group_File106,Matches File106
-E:Users\victim1903\Documents\File\File107,142129,Suspect_Group_File107,Matches File107 (JPEG)
-E:Users\victim1903\Documents\File\File108,1544836,Suspect_Group_File108,Matches File108 (PNG)
-E:Users\victim1903\Documents\File\File109,556987,Suspect_Group_File109,Matches File109 (RIFF WAVE)
-E:Users\victim1903\Documents\File\File110,2828,Suspect_Group_File110,Matches File110
-E:Users\victim1903\Documents\File\File111,146438,Suspect_Group_File111,Matches File111 (ZIP archive)
-E:Users\victim1903\Documents\File\File112,41,Suspect_Group_File112,Matches File112
-E:Users\victim1903\Documents\File\File113,160547,Suspect_Group_File113,Matches File113 (JPEG)
-E:Users\victim1903\Documents\File\File114,527117,Suspect_Group_File114,Matches File114 (PDF)
-E:Users\victim1903\Documents\File\File115,1063014,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File116,694240,Suspect_Group_File116,Matches File116 (ZIP archive)
-E:Users\victim1903\Documents\File\File117,64531,Suspect_Group_File117,Matches File117 (ZIP archive)
-E:Users\victim1903\Documents\File\File118,1080656,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File119,555,Suspect_Group_File119,Matches File119
-E:Users\victim1903\Documents\File\File120,572,Suspect_Group_File120,Matches File120
-E:Users\victim1903\Documents\File\File121,345850,Suspect_Group_File121,Matches File121 (ZIP archive)
-E:Users\victim1903\Documents\File\File122,572074,Suspect_Group_File122_2,Matches File122 (ZIP archive - Word numbering)
-E:Users\victim1903\Documents\File\File123,521414,Suspect_Group_File123,Matches File123 (PDF)
-E:Users\victim1903\Documents\File\File124,173180,Suspect_Group_File124,Matches File124 (JPEG)
-E:Users\victim1903\Documents\File\File125,1591997,Suspect_Group_File125,Matches File125 (PNG)
-E:Users\victim1903\Documents\File\File126,1502871,Suspect_Group_File126,Matches File126 (PNG)
-E:Users\victim1903\Documents\File\File127,154510,Suspect_Group_File127,Matches File127 (JPEG)
-E:Users\victim1903\Documents\File\File128,87,Suspect_Group_File128,Matches File128
-E:Users\victim1903\Documents\File\File129,217395,Suspect_Group_File129,Matches File129 (PDF)
-E:Users\victim1903\Documents\File\File130,100153,Suspect_Group_File130,Matches File130 (ZIP archive)
-E:Users\victim1903\Documents\File\File131,26769,Suspect_Group_File131,Matches File131 (ZIP archive)
-E:Users\victim1903\Documents\File\File132,588152,Suspect_Group_File132,Matches File132 (PDF)
-E:Users\victim1903\Documents\File\File133,159149,Suspect_Group_File133,Matches File133 (JPEG)
-E:Users\victim1903\Documents\File\File134,744699,Suspect_Group_File134,Matches File134 (ZIP archive)
-E:Users\victim1903\Documents\File\File135,5765224,Suspect_Group_File135,Matches File135 (PDF)
-E:Users\victim1903\Documents\File\File136,1809714,Suspect_Group_File136,Matches File136 (PNG)
-E:Users\victim1903\Documents\File\File137,1359,Suspect_Group_File137,Matches File137
-E:Users\victim1903\Documents\File\File138,663177,Suspect_Group_File138,Matches File138 (PDF)
-E:Users\victim1903\Documents\File\File139,168,Suspect_Group_File139,Matches File139
-E:Users\victim1903\Documents\File\File140,157962,Suspect_Group_File140,Matches File140 (JPEG)
-E:Users\victim1903\Documents\File\File141,472874,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File142,2693126,Suspect_Group_File142,Matches File142 (ZIP archive - PowerPoint)
-E:Users\victim1903\Documents\File\File143,1635658,Suspect_Group_File143,Matches File143 (PNG)
-E:Users\victim1903\Documents\File\File144,2490902,Suspect_Group_File144,Matches File144 (ZIP archive)
-E:Users\victim1903\Documents\File\File145,82840,Suspect_Group_File145,Matches File145 (ZIP archive)
-E:Users\victim1903\Documents\File\File146,3072,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File147,156,Suspect_Group_File147,Matches File147
-E:Users\victim1903\Documents\File\File148,315392,Suspect_Group_File148,Matches File148 (MZ variant)
-E:Users\victim1903\Documents\File\File149,27228,Suspect_Group_File149_2,Matches File149 (ZIP archive - Word footer)
-E:Users\victim1903\Documents\File\File150,955283,Suspect_Group_File150,Matches File150 (ZIP archive)
-E:Users\victim1903\Documents\File\File151,4723372,Suspect_Group_File151,Matches File151 (ZIP archive)
-E:Users\victim1903\Documents\File\File152,151135,Suspect_Group_File152,Matches File152 (JPEG)
-E:Users\victim1903\Documents\File\File153,40590,Suspect_Group_File153_2,Matches File153 (ZIP archive - Excel comments)
-E:Users\victim1903\Documents\File\File154,22534,Suspect_Group_File154,Matches File154
-E:Users\victim1903\Documents\File\File155,301568,Suspect_Group_File155,Matches File155 (MZ variant)
-E:Users\victim1903\Documents\File\File156,347444,Suspect_Group_File156,Matches File156 (PDF)
-E:Users\victim1903\Documents\File\File157,10483,Suspect_Group_File157,Matches File157
-E:Users\victim1903\Documents\File\File158,631,Suspect_Group_File158,Matches File158
-E:Users\victim1903\Documents\File\File159,317088,Suspect_Group_File159,Matches File159 (MZ variant)
-E:Users\victim1903\Documents\File\File160,4096,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File161,50971,Suspect_Group_File161,Matches File161 (ZIP archive - .rels)
-E:Users\victim1903\Documents\File\File162,28514,Suspect_Group_File162,Matches File162 (ZIP archive)
-E:Users\victim1903\Documents\File\File163,174733,Suspect_Group_File163,Matches File163 (JPEG)
-E:Users\victim1903\Documents\File\File164,12440,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File165,696,Suspect_Group_File165,Matches File165
-E:Users\victim1903\Documents\File\File166,3072,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File167,1233,Suspect_Group_File167,Matches File167
-E:Users\victim1903\Documents\File\File168,7815,Suspect_Group_File168,Matches File168
-E:Users\victim1903\Documents\File\File169,781,Suspect_Group_File169,Matches File169
-E:Users\victim1903\Documents\File\File170,6138710,Suspect_Group_File170,Matches File170 (ZIP archive)
-E:Users\victim1903\Documents\File\File171,1011368,Suspect_Group_File171,Matches File171 (ZIP archive)
-E:Users\victim1903\Documents\File\File172,17097,Suspect_Group_File172,Matches File172
-E:Users\victim1903\Documents\File\File173,19232,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File174,113,Suspect_Group_File174,Matches File174
-E:Users\victim1903\Documents\File\File175,829,Suspect_Group_File175,Matches File175
-E:Users\victim1903\Documents\File\File176,3072,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File177,12064,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File178,608,Suspect_Group_File178,Matches File178
-E:Users\victim1903\Documents\File\File179,9093,Suspect_Group_File179,Matches File179
-E:Users\victim1903\Documents\File\File180,2071847,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File181,9567,Suspect_Group_File181_2,Matches File181 (ZIP archive - Content_Types)
-E:Users\victim1903\Documents\File\File182,490858,Suspect_Group_File182,Matches File182 (PDF)
-E:Users\victim1903\Documents\File\File183,34148,Suspect_Group_File183,Matches File183 (ZIP archive)
-E:Users\victim1903\Documents\File\File184,1660287,Suspect_Group_File184,Matches File184 (PNG)
-E:Users\victim1903\Documents\File\File185,870117,Suspect_Group_File185,Matches File185 (ZIP archive)
-E:Users\victim1903\Documents\File\File186,2176,Suspect_Group_File186,Matches File186
-E:Users\victim1903\Documents\File\File187,23570,Suspect_Group_File187,Matches File187 (ZIP archive)
-E:Users\victim1903\Documents\File\File188,10470,Suspect_Group_File188,Matches File188
-E:Users\victim1903\Documents\File\File189,95254,Suspect_Group_File189,Matches File189 (ZIP archive)
-E:Users\victim1903\Documents\File\File190,1799942,Suspect_Group_File190,Matches File190 (PNG)
-E:Users\victim1903\Documents\File\File191,148835,Suspect_Group_File191,Matches File191 (ZIP archive)
-E:Users\victim1903\Documents\File\File192,319563,Suspect_Group_File192,Matches File192 (MZ truncated?)
-E:Users\victim1903\Documents\File\File193,466915,Suspect_Group_File193,Matches File193 (ZIP archive)
-E:Users\victim1903\Documents\File\File194,1641870,Suspect_Group_File194,Matches File194 (ZIP archive)
-E:Users\victim1903\Documents\File\File195,87316,Suspect_Group_File195,Matches File195 (ZIP archive)
-E:Users\victim1903\Documents\File\File196,1379663,Suspect_Group_File196,Matches File196 (ZIP archive)
-E:Users\victim1903\Documents\File\File197,2454899,Suspect_Group_File197_2,Matches File197 (ZIP archive - Word header)
-E:Users\victim1903\Documents\File\File198,10412619,Suspect_Group_File198,Matches File198 (ZIP archive - .rels)
-E:Users\victim1903\Documents\File\File199,266057,Suspect_Group_File199,Matches File199 (PDF)
-E:Users\victim1903\Documents\File\File200,1543898,Suspect_Group_File200,Matches File200 (PNG)
-E:Users\victim1903\Documents\File\File201,867014,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File202,1204734,Suspect_Group_File202,Matches File202 (B? variant)
-E:Users\victim1903\Documents\File\File203,781,Suspect_Group_File203,Matches File203
-E:Users\victim1903\Documents\File\File204,681,Suspect_Group_File204,Matches File204
-E:Users\victim1903\Documents\File\File205,169050,Suspect_Group_File205,Matches File205 (JPEG)
-E:Users\victim1903\Documents\File\File206,209333,Suspect_Group_File206,Matches File206 (ZIP archive)
-E:Users\victim1903\Documents\File\File207,726251,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File208,3060289,Suspect_Group_File208,Matches File208 (ZIP archive)
-E:Users\victim1903\Documents\File\File209,202653,Suspect_Group_File209,Matches File209 (PDF)
-E:Users\victim1903\Documents\File\File210,184563,Suspect_Group_File210,Matches File210 (ZIP archive - docProps)
-E:Users\victim1903\Documents\File\File211,458026,Suspect_Group_File211,Matches File211 (ZIP archive - Excel presentation)
-E:Users\victim1903\Documents\File\File212,182,Suspect_Group_File212,Matches File212
-E:Users\victim1903\Documents\File\File213,66043,Suspect_Group_PE_DOS_Stub,Matches multiple PE files with standard DOS stub
-E:Users\victim1903\Documents\File\File214,166868,Suspect_Group_File214,Matches File214 (JPEG)
-E:Users\victim1903\Documents\File\File215,643,Suspect_Group_File215,Matches File215
-E:Users\victim1903\Documents\File\File216,628,Suspect_Group_File216,Matches File216
-E:Users\victim1903\Documents\File\File217,14118,Suspect_Group_File217,Matches File217
-E:Users\victim1903\Documents\File\File218,1394042,Suspect_Group_File218,Matches File218 (PNG)
-E:Users\victim1903\Documents\File\File219,127189,Suspect_Group_File219,Matches File219 (JPEG with EXIF)
-E:Users\victim1903\Documents\File\File220,191,Suspect_Group_File220,Matches File220
+File Location,Filename,YARA Rule Hit,First 50 Bytes
+E:Users\John\Documents,File007,2007.yar,504b030414000600080000002100d4a2463fd9010000ec0900001300d3015b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File010,2007.yar,504b0304140006000800000021003cf321f4570200009f1600001300c0015b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File012,2007.yar,504b03041400060008000000210004e86306f70100009b0a0000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File014,2007.yar,504b030414000600080000002100e4a7b06feb010000350d0000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File031,2007.yar,504b0304140006000800000021009884f0a8eb010000220a00001300ca015b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File032,2007.yar,504b030414000600080000002100e679a397ba0100007d0d0000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File085,2007.yar,504b030414000600080000002100b5cf3e7b02010000bb0200000b00ed015f72656c732f2e72656c7320a2e90128a0000200
+E:Users\John\Documents,File087,2007.yar,504b0304140006000800000021008fbff13623040000c54e0000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File093,2007.yar,504b0304140006000800000021009d7c732ae3010000b50c0000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File094,2007.yar,504b03041400060008000000210081717d3cf8010000ba0c00001300cd015b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File096,2007.yar,504b030414000600080000002100d571953ee10100007a090000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File100,2007.yar,504b0304140006000800000021001e27607088010000ae050000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File104,2007.yar,504b0304140006000800000021002b54510ed9020000a62400001300ba015b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File111,2007.yar,504b030414000600080000002100458c023abc010000640800001300dc015b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File116,2007.yar,504b0304140006000800000021007476540cd00100006c0b0000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File117,2007.yar,504b0304140006000800000021009cbd3ce3ce010000c40b0000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File121,2007.yar,504b0304140006000800000021009f04c7c538020000541000001300c2015b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File130,2007.yar,504b0304140006000800000021003d578734c6010000bf080000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File131,2007.yar,504b030414000600080000002100a674045285010000ac070000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File134,2007.yar,504b0304140006000800000021003d578734c6010000bf080000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File145,2007.yar,504b030414000600080000002100ffbf187a2e020000570d00001300c2015b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File151,2007.yar,504b030414000600080000002100b7bbc7dca402000000250000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File161,2007.yar,504b030414000600080000002100b5cf3e7b02010000bb0200000b0008025f72656c732f2e72656c7320a2040228a0000200
+E:Users\John\Documents,File162,2007.yar,504b030414000600080000002100a404cfe97101000098050000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File170,2007.yar,504b030414000600080000002100c3aa5d0e8d020000581d0000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File171,2007.yar,504b03041400060008000000210033a54b358a01000099050000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File183,2007.yar,504b0304140006000800000021001cadb2d2fa0100006d0b0000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File185,2007.yar,504b0304140006000800000021009634826862020000281800001300c5015b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File187,2007.yar,504b030414000600080000002100b5f6d3968d01000021070000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File189,2007.yar,504b030414000600080000002100885e620bca010000220a0000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File191,2007.yar,504b03041400060008000000210058793607df010000230a0000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File194,2007.yar,504b0304140006000800000021003e1188ca6002000047190000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File196,2007.yar,504b03041400060008000000210062ee9d685e01000090040000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File198,2007.yar,504b03041400060008000000210099557e05f9000000e10200000b00f3015f72656c732f2e72656c7320a2ef0128a0000200
+E:Users\John\Documents,File206,2007.yar,504b03041400060008000000210024ec50bf8201000024070000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File208,2007.yar,504b030414000600080000002100e4a7b06feb010000350d0000130008025b436f6e74656e745f54797065735d2e786d6c20
+E:Users\John\Documents,File211,2007.yar,504b0304140006000800000021003bf479e32e030000b810000014000000786c2f70726573656e746174696f6e2e786d6cec
+E:Users\John\Documents,File046,DOSexec.yar,4d5a00010100000008001000ffff080000010000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File067,DOSexec.yar,4d5a93000300000020000000ffff070000016540000000004000000001000000000000000000000000000000000000000000
+E:Users\John\Documents,File155,DOSexec.yar,4d5a50000200000004000f00ffff0000b80000000000000040001a0000000000000000000000000000000000000000000000
+E:Users\John\Documents,File159,DOSexec.yar,4d5a8b000300000020000000ffff070000016540000000004000000001000000000000000000000000000000000000000000
+E:Users\John\Documents,File200,DOSexec.yar,4d5a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfd59b36449921e887daa6a76
+E:Users\John\Documents,File167,GNU_Info.yar,54686973206973206672656520616e6420756e656e63756d626572656420736f6674776172652072656c656173656420696e
+E:Users\John\Documents,File136,HEIC.yar,0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfd5bb32449921e887daa66ee1e71
+E:Users\John\Documents,File038,ISO.yar,43443030312e360a25f6e4fcdf0a312030206f626a0a3c3c0a2f4d657461646174612032203020520a2f4c616e672028656e
+E:Users\John\Documents,File004,NONE_Batch.yar,406563686f206f66660d0a736574202f61206c696e653d2572616e646f6d252025252035202b20310d0a666f72202f662022
+E:Users\John\Documents,File015,NONE_Batch.yar,406563686f206f66660d0a736574202f6120636f756e743d2572616e646f6d25202525203230202b20310d0a6563686f2047
+E:Users\John\Documents,File016,NONE_Batch.yar,406563686f206f66660d0a736574202f61206865783d2572616e646f6d25202525203235350d0a736574202f612068657832
+E:Users\John\Documents,File028,NONE_Batch.yar,406563686f206f66660d0a736574202f6120646965313d2572616e646f6d252025252036202b20310d0a736574202f612064
+E:Users\John\Documents,File029,NONE_Batch.yar,406563686f206f66660d0a666f72202f662022746f6b656e733d312d342064656c696d733d2f20222025256120696e202822
+E:Users\John\Documents,File034,NONE_Batch.yar,406563686f206f66660d0a736574202f61206e756d3d2572616e646f6d252025252031303030300d0a6563686f20596f7572
+E:Users\John\Documents,File040,NONE_Batch.yar,406563686f206f66660d0a73657420696e7075743d68656c6c6f0d0a7365742072657665727365643d0d0a666f72202f6c20
+E:Users\John\Documents,File044,NONE_Batch.yar,406563686f206f66660d0a7365746c6f63616c20656e61626c6564656c61796564657870616e73696f6e0d0a73657420776f
+E:Users\John\Documents,File050,NONE_Batch.yar,406563686f206f66660d0a736574202f6120636f6c6f723d2572616e646f6d252025252031360d0a636f6c6f722025636f6c
+E:Users\John\Documents,File061,NONE_Batch.yar,406563686f206f66660d0a736574202f612064656c61793d2572616e646f6d252025252035202b20310d0a74696d656f7574
+E:Users\John\Documents,File082,NONE_Batch.yar,406563686f206f66660d0a7365742070617468733d433a5c57696e646f77735c20433a5c55736572735c20433a5c50726f67
+E:Users\John\Documents,File083,NONE_Batch.yar,406563686f206f66660d0a736574202f61206e756d3d2572616e646f6d25202525203236202b2036350d0a666f72202f6620
+E:Users\John\Documents,File088,NONE_Batch.yar,406563686f206f66660d0a666f72202f6c2025256920696e2028312c312c33322920646f20280d0a20202020736574202f61
+E:Users\John\Documents,File112,NONE_Batch.yar,406563686f206f66660d0a6563686f2052616e646f6d20537472696e673a202572616e646f6d250d0a
+E:Users\John\Documents,File128,NONE_Batch.yar,406563686f206f66660d0a736574202f6120636f64653d2572616e646f6d25202525203235350d0a6563686f204578697469
+E:Users\John\Documents,File139,NONE_Batch.yar,406563686f206f66660d0a7365742073656e74656e6365733d48656c6c6f7c486f772061726520796f753f7c4e6963652077
+E:Users\John\Documents,File147,NONE_Batch.yar,406563686f206f66660d0a736574206d6573736167653d4c6f6164696e672072616e646f6d20746578742e2e2e0d0a666f72
+E:Users\John\Documents,File174,NONE_Batch.yar,406563686f206f66660d0a736574202f6120613d2572616e646f6d25202525203130300d0a736574202f6120623d2572616e
+E:Users\John\Documents,File212,NONE_Batch.yar,406563686f206f66660d0a736574206164766963653d5374617920706f7369746976652e7c54616b6520627265616b732e7c
+E:Users\John\Documents,File220,NONE_Batch.yar,406563686f206f66660d0a73657420776f72643d68656c6c6f0d0a73657420736372616d626c65643d0d0a666f72202f6c20
+E:Users\John\Documents,File006,PK.yar,504b03040a000000000000002100ffffffff1102000011020000100000005b74726173685d2f303030302e646174ffffffff
+E:Users\John\Documents,File017,PK.yar,504b03040a000000000000002100ffffffff0d0200000d020000100000005b74726173685d2f303030302e646174ffffffff
+E:Users\John\Documents,File030,PK.yar,504b03040a000000000000002100ffffffff6402000064020000100000005b74726173685d2f303030302e646174ffffffff
+E:Users\John\Documents,File035,PK.yar,504b030414000000080000002100610dd4924202000075140000130000005b436f6e74656e745f54797065735d2e786d6ccc
+E:Users\John\Documents,File037,PK.yar,504b03040a000000000000002100ffffffff3502000035020000100000005b74726173685d2f303030302e646174ffffffff
+E:Users\John\Documents,File043,PK.yar,504b03041400020008004a247659fb70553b11530000494e030011001100776f72642f646f63756d656e742e786d6c55540d
+E:Users\John\Documents,File056,PK.yar,504b03040a000000000000002100fffffffff3010000f3010000100000005b74726173685d2f303030302e646174ffffffff
+E:Users\John\Documents,File074,PK.yar,504b03040a000000000000002100ffffffff2d0200002d020000100000005b74726173685d2f303030302e646174ffffffff
+E:Users\John\Documents,File076,PK.yar,504b0304140008080800ab0b765900000000000000000000000010000000776f72642f686561646572312e786d6ccd96db8e
+E:Users\John\Documents,File122,PK.yar,504b030414000808080048a5755900000000000000000000000012000000776f72642f6e756d626572696e672e786d6ced9b
+E:Users\John\Documents,File142,PK.yar,504b03040a00000008000000210003e47bfec703000091130000140000007070742f70726573656e746174696f6e2e786d6c
+E:Users\John\Documents,File144,PK.yar,504b03040a000000000000002100ffffffff1c0200001c020000100000005b74726173685d2f303030302e646174ffffffff
+E:Users\John\Documents,File149,PK.yar,504b0304140008080800ce13765900000000000000000000000010000000776f72642f666f6f746572312e786d6ced57ff6e
+E:Users\John\Documents,File150,PK.yar,504b03040a000000000000002100ffffffff2002000020020000100000005b74726173685d2f303030302e646174ffffffff
+E:Users\John\Documents,File153,PK.yar,504b0304140008080800babb755500000000000000000000000010000000786c2f636f6d6d656e7473312e786d6c8d53cb6e
+E:Users\John\Documents,File181,PK.yar,504b0304140000080800423d3c5a479244b25a010000f0040000130004005b436f6e74656e745f54797065735d2e786d6c53
+E:Users\John\Documents,File193,PK.yar,504b03040a000000000000002100ffffffff0c0200000c020000100000005b74726173685d2f303030302e646174ffffffff
+E:Users\John\Documents,File197,PK.yar,504b0304140008080800d241755900000000000000000000000010000000776f72642f686561646572312e786d6ca595db8e
+E:Users\John\Documents,File210,PK.yar,504b03040a000000080000002100fc1fed11250200004305000010000000646f6350726f70732f6170702e786d6c9c54df6f
+E:Users\John\Documents,File045,Winexec.yar,ffd8ffe100104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File052,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File053,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File073,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File078,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File079,Winexec.yar,fffb90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File089,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File090,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File097,Winexec.yar,ffd9ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File107,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File113,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File124,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File127,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File133,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File140,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File143,Winexec.yar,ffd8ff0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfd599324499226887dcc22
+E:Users\John\Documents,File148,Winexec.yar,fffb90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File152,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File163,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File205,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File214,Winexec.yar,ffd8ffe000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File219,Winexec.yar,ffd8ffe000104558494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b0c1912130f
+E:Users\John\Documents,File001,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File005,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File024,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File025,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File027,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File042,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File047,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File051,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File060,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File062,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File071,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File075,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File080,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File081,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File092,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File095,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File101,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File115,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File118,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File141,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File146,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File160,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File164,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File166,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File173,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File176,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File177,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File180,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File201,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File207,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File213,Zone.yar,4d5a90000300000004000000ffff0000b8000000000000004000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File102,cursor.yar,52494646574156452d312e360d25e2e3cfd30d0a35392030206f626a203c3c2f4c696e656172697a656420312f4c20313936
+E:Users\John\Documents,File109,cursor.yar,52494646574156452d312e330a25e2e3cfd30a312030206f626a0a3c3c0a2f54797065202f50616765730a2f436f756e7420
+E:Users\John\Documents,File023,mp3.yar,49443300010100000008001000ffff0800000100000000000040000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File063,mp3.yar,494433312e340d258084888c9094989ca0a4a8acb0b4b8bcc0c4c8ccd0d4d8dce0e4e8ecf0f4f8fc0d0d312030206f626a0d
+E:Users\John\Documents,File091,none_202020_weird.yar,202020202020202020202020444f205748415420544845204655434b20594f552057414e5420544f205055424c4943204c49
+E:Users\John\Documents,File099,none_202020_weird.yar,0a22312e20496e7374616c6c20616e6420636f6e66696775726520746865206e656365737361727920646570656e64656e63
+E:Users\John\Documents,File217,none_202020_weird.yar,202020202020202020202020202020202020202020204555524f5045414e20554e494f4e205055424c4943204c4943454e43
+E:Users\John\Documents,File192,none_headerless_execs.yar,90000300000004000000ffff0000b80000000000000040000000000000000000000000000000000000000000000000000000
+E:Users\John\Documents,File202,none_headerless_execs.yar,42000200000020000000ffff05000001000000000000400000000100fb716a72000000000000000000000000000000000000
+E:Users\John\Documents,File018,none_pdf.yar,255044462d312e350a25f6e4fcdf0a312030206f626a0a3c3c0a2f54797065202f436174616c6f670a2f5061676573203220
+E:Users\John\Documents,File022,none_pdf.yar,255044462d312e370a25f6e4fcdf0a312030206f626a0a3c3c0a2f50616765732032203020520a2f54797065202f43617461
+E:Users\John\Documents,File066,none_pdf.yar,255044462d312e370a25e2e3cfd30a362030206f626a0a3c3c2f46696c7465722f466c6174654465636f64652f4c656e6774
+E:Users\John\Documents,File084,none_pdf.yar,255044462d312e330a25e2e3cfd30a312030206f626a0a3c3c0a2f54797065202f50616765730a2f436f756e742033330a2f
+E:Users\John\Documents,File103,none_pdf.yar,255044462d312e340a25f6e4fcdf0a312030206f626a0a3c3c0a2f54797065202f436174616c6f670a2f56657273696f6e20
+E:Users\John\Documents,File114,none_pdf.yar,255044462d312e330a25e2e3cfd30a312030206f626a0a3c3c0a2f54797065202f50616765730a2f436f756e742032300a2f
+E:Users\John\Documents,File123,none_pdf.yar,255044462d312e350d0a25b5b5b5b50d0a312030206f626a0d0a3c3c2f547970652f436174616c6f672f5061676573203220
+E:Users\John\Documents,File129,none_pdf.yar,255044462d312e330a25e2e3cfd30a312030206f626a0a3c3c0a2f54797065202f50616765730a2f436f756e742031390a2f
+E:Users\John\Documents,File132,none_pdf.yar,255044462d312e360d25e2e3cfd30d0a3433312030206f626a0d3c3c2f4c696e656172697a656420312f4c20353838313532
+E:Users\John\Documents,File135,none_pdf.yar,255044462d312e370d25e2e3cfd30d0a312030206f626a0a3c3c2f4163726f466f726d2035203020522f4c616e6728656e29
+E:Users\John\Documents,File138,none_pdf.yar,255044462d312e370a25e2e3cfd30a312030206f626a0a3c3c2f436f6c6f7253706163652f446576696365477261792f5375
+E:Users\John\Documents,File156,none_pdf.yar,255044462d312e370a25f6e4fcdf0a312030206f626a0a3c3c0a2f54797065202f436174616c6f670a2f5061676573203220
+E:Users\John\Documents,File182,none_pdf.yar,255044462d312e340d25e2e3cfd30d0a313231332030206f626a0d3c3c2f4c696e656172697a656420312f4c203439303836
+E:Users\John\Documents,File199,none_pdf.yar,255044462d312e370d0a25b5b5b5b50d0a312030206f626a0d0a3c3c2f547970652f436174616c6f672f5061676573203220
+E:Users\John\Documents,File209,none_pdf.yar,255044462d312e330a25e2e3cfd30a312030206f626a0a3c3c0a2f54797065202f50616765730a2f436f756e742031340a2f
+E:Users\John\Documents,File008,none_png.yar,89504e470d0a1a0a0000000d4c454e5a00000388000004ec0806000000c272ac0c0001000049444154789cecfd799c6dd975
+E:Users\John\Documents,File009,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfd5993243992
+E:Users\John\Documents,File019,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfd79b025d779
+E:Users\John\Documents,File036,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfd69b0655976
+E:Users\John\Documents,File041,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfde992244b92
+E:Users\John\Documents,File059,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfde9b36d4976
+E:Users\John\Documents,File068,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfd59af244b92
+E:Users\John\Documents,File069,none_png.yar,89504e470d0a1a0ae000104a46494600010100000100010000ffdb004300080606070605080707070909080a0c140d0c0b0b
+E:Users\John\Documents,File070,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfd49b3654b76
+E:Users\John\Documents,File072,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfd699725c971
+E:Users\John\Documents,File098,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfd69ac6ddb75
+E:Users\John\Documents,File105,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfdf993245b76
+E:Users\John\Documents,File108,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfde9b22c4992
+E:Users\John\Documents,File125,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfd67b465c975
+E:Users\John\Documents,File126,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfd77b025c979
+E:Users\John\Documents,File184,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfdf98f245b96
+E:Users\John\Documents,File190,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfde9b36dc775
+E:Users\John\Documents,File218,none_png.yar,89504e470d0a1a0a0000000d4948445200000388000004ec0806000000c272ac0c0001000049444154789cecfd69b06dc975
+E:Users\John\Documents,File003,none_specific_licences.yar,436f7079726967687420286329205b796561725d205b66756c6c6e616d655d0d0a0d0a54686520556e6976657273616c2050
+E:Users\John\Documents,File021,none_specific_licences.yar,2020202020202020202020202020202020202020474e552041464645524f2047454e4552414c205055424c4943204c494345
+E:Users\John\Documents,File026,none_specific_licences.yar,2020202020202020202020202020202020202020474e552047454e4552414c205055424c4943204c4943454e53450d0a2020
+E:Users\John\Documents,File065,none_specific_licences.yar,495343204c6963656e73650d0a0d0a436f7079726967687420286329205b796561725d205b66756c6c6e616d655d0d0a0d0a
+E:Users\John\Documents,File086,none_specific_licences.yar,425344205a65726f20436c61757365204c6963656e73650d0a0d0a436f7079726967687420286329205b796561725d205b66
+E:Users\John\Documents,File110,none_specific_licences.yar,4d6963726f736f6674205075626c6963204c6963656e736520284d732d504c290d0a0d0a54686973206c6963656e73652067
+E:Users\John\Documents,File137,none_specific_licences.yar,426f6f737420536f667477617265204c6963656e7365202d2056657273696f6e20312e30202d204175677573742031377468
+E:Users\John\Documents,File157,none_specific_licences.yar,41636164656d69632046726565204c6963656e736520282241464c222920762e20332e300d0a0d0a54686973204163616465
+E:Users\John\Documents,File168,none_specific_licences.yar,20202020202020202020202020202020202020474e55204c45535345522047454e4552414c205055424c4943204c4943454e
+E:Users\John\Documents,File172,none_specific_licences.yar,4d6f7a696c6c61205075626c6963204c6963656e73652056657273696f6e20322e300d0a3d3d3d3d3d3d3d3d3d3d3d3d3d3d
+E:Users\John\Documents,File179,none_specific_licences.yar,090920202020202020546865204172746973746963204c6963656e736520322e300d0a0d0a0920202020436f707972696768
+E:Users\John\Documents,File188,none_specific_licences.yar,4f70656e20536f667477617265204c6963656e73652028224f534c222920762e20332e300d0a0d0a54686973204f70656e20
+E:Users\John\Documents,File020,none_weird_spaces.yar,4100740074007200690062007500740069006f006e00200034002e003000200049006e007400650072006e00610074006900
+E:Users\John\Documents,File106,none_weird_spaces.yar,450063006c00690070007300650020005000750062006c006900630020004c006900630065006e007300650020002d002000
+E:Users\John\Documents,File154,none_weird_spaces.yar,45006400750063006100740069006f006e0061006c00200043006f006d006d0075006e0069007400790020004c0069006300
+E:Users\John\Documents,File186,none_weird_spaces.yar,4d004900540020004c006900630065006e00730065000d000a000d000a0043006f0070007900720069006700680074002000
+E:Users\John\Documents,File002,script.yar,efbbbf3c230a2e53594e4f505349530a09496e7374616c6c73205a6f6f6d0a2e4445534352495054494f4e0a095468697320
+E:Users\John\Documents,File013,script.yar,efbbbf3c230a2e53594e4f505349530a095072696e747320746865204d443520636865636b73756d206f6620612066696c65
+E:Users\John\Documents,File039,script.yar,efbbbf3c230a2e53594e4f505349530a09496e7374616c6c7320446973636f72640a2e4445534352495054494f4e0a095468
+E:Users\John\Documents,File048,script.yar,efbbbf3c230a2e53594e4f505349530a095072696e74732074686520534841312068617368206f6620612066696c650a2e44
+E:Users\John\Documents,File049,script.yar,efbbbf3c230a2e53594e4f505349530a09496e7374616c6c7320626173696320617070730a2e4445534352495054494f4e0a
+E:Users\John\Documents,File054,script.yar,efbbbf3c230a2e53594e4f505349530a09496e7374616c6c732047697420666f722057696e646f77730a2e44455343524950
+E:Users\John\Documents,File057,script.yar,efbbbf3c230a2e53594e4f505349530a09456e61626c65732074686520676f64206d6f64650a2e4445534352495054494f4e
+E:Users\John\Documents,File077,script.yar,efbbbf3c230a2e53594e4f505349530a09496e7374616c6c73204368726f6d650a2e4445534352495054494f4e0a09546869
+E:Users\John\Documents,File119,script.yar,efbbbf3c230a2e53594e4f505349530a09496e7374616c6c7320547769747465720a2e4445534352495054494f4e0a095468
+E:Users\John\Documents,File120,script.yar,efbbbf3c230a2e53594e4f505349530a09496e7374616c6c73205468756e646572626972640a2e4445534352495054494f4e
+E:Users\John\Documents,File158,script.yar,efbbbf3c230a2e53594e4f505349530a09496e7374616c6c732053706f746966790a2e4445534352495054494f4e0a095468
+E:Users\John\Documents,File165,script.yar,efbbbf3c230d0a2e53594e4f505349530d0a2020202020202020496e7374616c6c732043686f636f6c6174657920286e6565
+E:Users\John\Documents,File169,script.yar,efbbbf3c230a2e53594e4f505349530a095072696e747320746865205348413531322068617368206f6620612066696c650a
+E:Users\John\Documents,File175,script.yar,efbbbf3c230a2e53594e4f505349530a09496e7374616c6c7320564c430a2e4445534352495054494f4e0a09546869732050
+E:Users\John\Documents,File178,script.yar,efbbbf3c230a2e53594e4f505349530a09496e7374616c6c73204e6574666c69780a2e4445534352495054494f4e0a095468
+E:Users\John\Documents,File203,script.yar,efbbbf3c230a2e53594e4f505349530a095072696e747320746865205348413235362068617368206f6620612066696c650a
+E:Users\John\Documents,File204,script.yar,efbbbf3c230a2e53594e4f505349530a09496e7374616c6c73204f42532053747564696f20286e656564732061646d696e20
+E:Users\John\Documents,File215,script.yar,efbbbf3c230a2e53594e4f505349530a09496e7374616c6c732056697375616c2053747564696f20436f64650a2e44455343
+E:Users\John\Documents,File216,script.yar,efbbbf3c230a2e53594e4f505349530a09496e7374616c6c732047697420457874656e73696f6e730a2e4445534352495054
