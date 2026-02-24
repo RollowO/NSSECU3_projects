@@ -208,7 +208,7 @@ def main():
     parser.add_argument("--min-score", type=float, default=0.90, help="Overall similarity threshold")
     parser.add_argument("--min-key-ratio", type=float, default=0.75, help="Key position agreement ratio")
     parser.add_argument("--min-headtail-ratio", type=float, default=0.75, help="Head/tail agreement ratio")
-    parser.add_argument("--size-margin", type=int, default=1024, help="Allowed file size variance in bytes (Default: 1024)")
+    parser.add_argument("--size-margin", type=int, default=50, help="Allowed file size variance in bytes (Default: 50)")
     parser.add_argument("--max-pending", type=int, default=5000, help="Max in-flight file reads")
     parser.add_argument("--include-nonmatches", action="store_true", help="Write Unknown files to CSV")
     parser.add_argument("--include-extensions", action="store_true", help="Scan files with extensions")
